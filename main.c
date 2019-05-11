@@ -77,7 +77,7 @@
 void main(void)
 {
 
-    const int time = 5;
+    const int time = 1;
     
     TRISB = 0 ;                  // PORT B Setting: Set all the pins in port B to Output.
 

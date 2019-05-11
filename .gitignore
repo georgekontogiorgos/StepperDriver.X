@@ -1,7 +1,2 @@
-dist/default/production/
-nbproject/Makefile-genesis.properties
-nbproject/private/configurations.xml
 build/default/production/main.i
 build/default/production/main.p1
-nbproject/configurations.xml
-nbproject/private/private.xml
