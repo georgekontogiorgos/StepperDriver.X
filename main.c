@@ -74,43 +74,85 @@
  * RB3 - IN4
  */
 
-void main(void)
+const int time = 1;
+const int lut[8][2]={{1,0}, {1,1}, {0,1}, {-1,1}, {-1,0}, {-1,-1}, {0,-1}, {1,-1}};
+
+int state=0;
+
+void coilA(int dir)
 {
-
-    const int time = 1;
-    
-    TRISB = 0 ;                  // PORT B Setting: Set all the pins in port B to Output.
-
-    while(1)
+    if(dir==-1)
     {
         LATBbits.LATB0 = 1;
-        LATBbits.LATB1 = 0;
-        LATBbits.LATB2 = 0;
-        LATBbits.LATB3 = 0;
+        LATBbits.LATB1 = 0;   
 
-        __delay_ms(time);
-        
-        LATBbits.LATB0 = 0;
-        LATBbits.LATB1 = 0;
-        LATBbits.LATB2 = 1;
-        LATBbits.LATB3 = 0;
-
-        __delay_ms(time);
-        
-        LATBbits.LATB0 = 0;
-        LATBbits.LATB1 = 1;
-        LATBbits.LATB2 = 0;
-        LATBbits.LATB3 = 0;
-
-        __delay_ms(time);  
-        
-        LATBbits.LATB0 = 0;
-        LATBbits.LATB1 = 0;
-        LATBbits.LATB2 = 0;
-        LATBbits.LATB3 = 1;
-
-        __delay_ms(time);         
     }
+    if(dir==0)
+    {
+        LATBbits.LATB0 = 0;
+        LATBbits.LATB1 = 0;   
+
+    }
+    if(dir==1)
+    {
+        LATBbits.LATB0 = 0;
+        LATBbits.LATB1 = 1;   
+
+    }   
+}
+
+void coilB(int dir)
+{
+    if(dir==-1)
+    {
+        LATBbits.LATB2 = 1;
+        LATBbits.LATB3 = 0;   
+
+    }
+    if(dir==0)
+    {
+        LATBbits.LATB2 = 0;
+        LATBbits.LATB3 = 0;   
+
+    }
+    if(dir==1)
+    {
+        LATBbits.LATB2 = 0;
+        LATBbits.LATB3 = 1;   
+
+    }   
+}
+
+void move(int step, int dir)
+{
+    while(step>0)
+    {
+        if(state>=8)
+            state=0;
+        if(state<0)
+            state=7;
+        coilA(lut[state][0]);
+        coilB(lut[state][1]);
+        __delay_ms(time);
+        if(dir==1)
+            state++;
+        else
+            state--;
+        step--;
+    }
+    return;
+}
+
+void main(void)
+{
+    TRISB = 0 ;                  // PORT B Setting: Set all the pins in port B to Output.
+
+    int i;
+    
+    move(400,1);
+    move(200,0);
+    
+    while(1);
 }
 
 /* THE END */

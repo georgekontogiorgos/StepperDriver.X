@@ -11,15 +11,19 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/xcX9cAFUW.o
+$dist/default/production/StepperDriver.X.production.o
+cinit CODE 0 968 968 12 1
+text0 CODE 0 8EA 8EA 2E 1
+text1 CODE 0 824 824 C6 1
+text2 CODE 0 918 918 28 1
+text3 CODE 0 940 940 28 1
+cstackCOMRAM COMRAM 1 1 1 8 1
+smallconst SMALLCONST 0 800 800 24 1
+bssCOMRAM COMRAM 1 9 9 2 1
+$/tmp/xcXIANufL.o
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 E 1
-$dist/default/production/StepperDriver.X.production.o
-cinit CODE 0 86A 86A E 1
-text0 CODE 0 804 804 66 1
-cstackCOMRAM COMRAM 1 1 1 1 1
-smallconst SMALLCONST 0 800 800 4 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -37,15 +41,15 @@ BANK5 500-5FF 1
 BANK6 600-6FF 1
 BANK7 700-7FF 1
 CONST 4-7FF 1
-CONST 878-5FFF 1
+CONST 97A-5FFF 1
 STACK 60-7FF 1
-SMALLCONST 878-5FFF 1
+SMALLCONST 97A-5FFF 1
 CODE 4-7FF 1
-CODE 878-5FFF 1
-BIGRAM 2-7FF 1
-COMRAM 2-5F 1
+CODE 97A-5FFF 1
+BIGRAM B-7FF 1
+COMRAM B-5F 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 878-5FFF 1
+MEDIUMCONST 97A-5FFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -60,39 +64,59 @@ MEDIUMCONST 878-5FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/StepperDriver.X.production.o
-804 text0 CODE >77:/tmp/xcXi4YPre
-804 text0 CODE >77:/home/george/MPLABXProjects/StepperDriver.X/main.c
-804 text0 CODE >82:/home/george/MPLABXProjects/StepperDriver.X/main.c
-808 text0 CODE >86:/home/george/MPLABXProjects/StepperDriver.X/main.c
-80A text0 CODE >87:/home/george/MPLABXProjects/StepperDriver.X/main.c
-80C text0 CODE >88:/home/george/MPLABXProjects/StepperDriver.X/main.c
-80E text0 CODE >89:/home/george/MPLABXProjects/StepperDriver.X/main.c
-810 text0 CODE >91:/home/george/MPLABXProjects/StepperDriver.X/main.c
-820 text0 CODE >93:/home/george/MPLABXProjects/StepperDriver.X/main.c
-822 text0 CODE >94:/home/george/MPLABXProjects/StepperDriver.X/main.c
-824 text0 CODE >95:/home/george/MPLABXProjects/StepperDriver.X/main.c
-826 text0 CODE >96:/home/george/MPLABXProjects/StepperDriver.X/main.c
-828 text0 CODE >98:/home/george/MPLABXProjects/StepperDriver.X/main.c
-838 text0 CODE >100:/home/george/MPLABXProjects/StepperDriver.X/main.c
-83A text0 CODE >101:/home/george/MPLABXProjects/StepperDriver.X/main.c
-83C text0 CODE >102:/home/george/MPLABXProjects/StepperDriver.X/main.c
-83E text0 CODE >103:/home/george/MPLABXProjects/StepperDriver.X/main.c
-840 text0 CODE >105:/home/george/MPLABXProjects/StepperDriver.X/main.c
-850 text0 CODE >107:/home/george/MPLABXProjects/StepperDriver.X/main.c
-852 text0 CODE >108:/home/george/MPLABXProjects/StepperDriver.X/main.c
-854 text0 CODE >109:/home/george/MPLABXProjects/StepperDriver.X/main.c
-856 text0 CODE >110:/home/george/MPLABXProjects/StepperDriver.X/main.c
-858 text0 CODE >112:/home/george/MPLABXProjects/StepperDriver.X/main.c
-86A cinit CODE >538:/tmp/xcXi4YPre
-86A cinit CODE >540:/tmp/xcXi4YPre
-86A cinit CODE >543:/tmp/xcXi4YPre
-86A cinit CODE >549:/tmp/xcXi4YPre
-86A cinit CODE >552:/tmp/xcXi4YPre
-86C cinit CODE >553:/tmp/xcXi4YPre
-86E cinit CODE >554:/tmp/xcXi4YPre
-870 cinit CODE >555:/tmp/xcXi4YPre
-872 cinit CODE >556:/tmp/xcXi4YPre
-874 cinit CODE >557:/tmp/xcXi4YPre
+940 text3 CODE >82:/home/george/MPLABXProjects/StepperDriver.X/main.c
+940 text3 CODE >84:/home/george/MPLABXProjects/StepperDriver.X/main.c
+94A text3 CODE >86:/home/george/MPLABXProjects/StepperDriver.X/main.c
+94C text3 CODE >87:/home/george/MPLABXProjects/StepperDriver.X/main.c
+94E text3 CODE >90:/home/george/MPLABXProjects/StepperDriver.X/main.c
+956 text3 CODE >92:/home/george/MPLABXProjects/StepperDriver.X/main.c
+958 text3 CODE >93:/home/george/MPLABXProjects/StepperDriver.X/main.c
+95A text3 CODE >96:/home/george/MPLABXProjects/StepperDriver.X/main.c
+962 text3 CODE >98:/home/george/MPLABXProjects/StepperDriver.X/main.c
+964 text3 CODE >99:/home/george/MPLABXProjects/StepperDriver.X/main.c
+966 text3 CODE >102:/home/george/MPLABXProjects/StepperDriver.X/main.c
+918 text2 CODE >104:/home/george/MPLABXProjects/StepperDriver.X/main.c
+918 text2 CODE >106:/home/george/MPLABXProjects/StepperDriver.X/main.c
+922 text2 CODE >108:/home/george/MPLABXProjects/StepperDriver.X/main.c
+924 text2 CODE >109:/home/george/MPLABXProjects/StepperDriver.X/main.c
+926 text2 CODE >112:/home/george/MPLABXProjects/StepperDriver.X/main.c
+92E text2 CODE >114:/home/george/MPLABXProjects/StepperDriver.X/main.c
+930 text2 CODE >115:/home/george/MPLABXProjects/StepperDriver.X/main.c
+932 text2 CODE >118:/home/george/MPLABXProjects/StepperDriver.X/main.c
+93A text2 CODE >120:/home/george/MPLABXProjects/StepperDriver.X/main.c
+93C text2 CODE >121:/home/george/MPLABXProjects/StepperDriver.X/main.c
+93E text2 CODE >124:/home/george/MPLABXProjects/StepperDriver.X/main.c
+824 text1 CODE >126:/home/george/MPLABXProjects/StepperDriver.X/main.c
+824 text1 CODE >128:/home/george/MPLABXProjects/StepperDriver.X/main.c
+826 text1 CODE >130:/home/george/MPLABXProjects/StepperDriver.X/main.c
+836 text1 CODE >132:/home/george/MPLABXProjects/StepperDriver.X/main.c
+83E text1 CODE >134:/home/george/MPLABXProjects/StepperDriver.X/main.c
+842 text1 CODE >136:/home/george/MPLABXProjects/StepperDriver.X/main.c
+84A text1 CODE >138:/home/george/MPLABXProjects/StepperDriver.X/main.c
+87A text1 CODE >139:/home/george/MPLABXProjects/StepperDriver.X/main.c
+8B2 text1 CODE >140:/home/george/MPLABXProjects/StepperDriver.X/main.c
+8C0 text1 CODE >141:/home/george/MPLABXProjects/StepperDriver.X/main.c
+8C8 text1 CODE >142:/home/george/MPLABXProjects/StepperDriver.X/main.c
+8CE text1 CODE >144:/home/george/MPLABXProjects/StepperDriver.X/main.c
+8D4 text1 CODE >146:/home/george/MPLABXProjects/StepperDriver.X/main.c
+8DA text1 CODE >128:/home/george/MPLABXProjects/StepperDriver.X/main.c
+8EA text0 CODE >151:/home/george/MPLABXProjects/StepperDriver.X/main.c
+8EA text0 CODE >155:/home/george/MPLABXProjects/StepperDriver.X/main.c
+8EE text0 CODE >159:/home/george/MPLABXProjects/StepperDriver.X/main.c
+902 text0 CODE >160:/home/george/MPLABXProjects/StepperDriver.X/main.c
+916 text0 CODE >162:/home/george/MPLABXProjects/StepperDriver.X/main.c
+968 cinit CODE >566:/tmp/xcXmKZ3CN
+968 cinit CODE >568:/tmp/xcXmKZ3CN
+968 cinit CODE >571:/tmp/xcXmKZ3CN
+968 cinit CODE >583:/tmp/xcXmKZ3CN
+96A cinit CODE >584:/tmp/xcXmKZ3CN
+96C cinit CODE >590:/tmp/xcXmKZ3CN
+96C cinit CODE >593:/tmp/xcXmKZ3CN
+96E cinit CODE >594:/tmp/xcXmKZ3CN
+970 cinit CODE >595:/tmp/xcXmKZ3CN
+972 cinit CODE >596:/tmp/xcXmKZ3CN
+974 cinit CODE >597:/tmp/xcXmKZ3CN
+976 cinit CODE >598:/tmp/xcXmKZ3CN
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -106,25 +130,31 @@ $dist/default/production/StepperDriver.X.production.o
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/StepperDriver.X.production.o
+coilA@dir 1 0 COMRAM 1 cstackCOMRAM dist/default/production/StepperDriver.X.production.o
+coilB@dir 1 0 COMRAM 1 cstackCOMRAM dist/default/production/StepperDriver.X.production.o
 __Hspace_0 30000E 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
-__Hspace_1 2 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
+__Hspace_1 B 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production/StepperDriver.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcX9cAFUW.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXIANufL.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/StepperDriver.X.production.o
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production/StepperDriver.X.production.o
-___sp 0 0 STACK 2 stack /tmp/xcX9cAFUW.o
-_main 804 0 CODE 0 text0 dist/default/production/StepperDriver.X.production.o
-start 0 0 CODE 0 init /tmp/xcX9cAFUW.o
+___sp 0 0 STACK 2 stack /tmp/xcXIANufL.o
+_main 8EA 0 CODE 0 text0 dist/default/production/StepperDriver.X.production.o
+_move 824 0 CODE 0 text1 dist/default/production/StepperDriver.X.production.o
+start 0 0 CODE 0 init /tmp/xcXIANufL.o
 __size_of_main 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
+__size_of_move 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/StepperDriver.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production/StepperDriver.X.production.o
-__accesstop 60 0 ABS 0 - /tmp/xcX9cAFUW.o
-intlevel0 0 0 CODE 0 text /tmp/xcX9cAFUW.o
-intlevel1 0 0 CODE 0 text /tmp/xcX9cAFUW.o
-intlevel2 0 0 CODE 0 text /tmp/xcX9cAFUW.o
-intlevel3 0 0 CODE 0 text /tmp/xcX9cAFUW.o
+__accesstop 60 0 ABS 0 - /tmp/xcXIANufL.o
+intlevel0 0 0 CODE 0 text /tmp/xcXIANufL.o
+intlevel1 0 0 CODE 0 text /tmp/xcXIANufL.o
+intlevel2 0 0 CODE 0 text /tmp/xcXIANufL.o
+intlevel3 0 0 CODE 0 text /tmp/xcXIANufL.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/StepperDriver.X.production.o
 __CFG_USBDIV$1 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/StepperDriver.X.production.o
 __CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
@@ -133,19 +163,22 @@ __CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production/StepperDriver.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production/StepperDriver.X.production.o
-___inthi_sp 0 0 STACK 2 stack /tmp/xcX9cAFUW.o
-___intlo_sp 0 0 STACK 2 stack /tmp/xcX9cAFUW.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXIANufL.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXIANufL.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/StepperDriver.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/StepperDriver.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/StepperDriver.X.production.o
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production/StepperDriver.X.production.o
+__size_of_coilA 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
+__size_of_coilB 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production/StepperDriver.X.production.o
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
-start_initialization 86A 0 CODE 0 cinit dist/default/production/StepperDriver.X.production.o
+start_initialization 968 0 CODE 0 cinit dist/default/production/StepperDriver.X.production.o
 __CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/StepperDriver.X.production.o
 ___rparam_used 1 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
+move@step 3 0 COMRAM 1 cstackCOMRAM dist/default/production/StepperDriver.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production/StepperDriver.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production/StepperDriver.X.production.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/production/StepperDriver.X.production.o
@@ -163,9 +196,12 @@ __Hparam 0 0 COMRAM 1 rparam dist/default/production/StepperDriver.X.production.
 __Hrdata 0 0 COMRAM 1 rdata dist/default/production/StepperDriver.X.production.o
 __Hstack 0 0 STACK 2 stack dist/default/production/StepperDriver.X.production.o
 __Htext0 0 0 ABS 0 text0 dist/default/production/StepperDriver.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production/StepperDriver.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production/StepperDriver.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production/StepperDriver.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/StepperDriver.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production/StepperDriver.X.production.o
-__smallconst 800 0 SMALLCONST 0 smallconst /tmp/xcX9cAFUW.o
+__smallconst 800 0 SMALLCONST 0 smallconst /tmp/xcXIANufL.o
 __Hcomram 0 0 ABS 0 comram dist/default/production/StepperDriver.X.production.o
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production/StepperDriver.X.production.o
 __CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
@@ -186,6 +222,9 @@ __Lparam 0 0 COMRAM 1 rparam dist/default/production/StepperDriver.X.production.
 __Lrdata 0 0 COMRAM 1 rdata dist/default/production/StepperDriver.X.production.o
 __Lstack 0 0 STACK 2 stack dist/default/production/StepperDriver.X.production.o
 __Ltext0 0 0 ABS 0 text0 dist/default/production/StepperDriver.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production/StepperDriver.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production/StepperDriver.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production/StepperDriver.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production/StepperDriver.X.production.o
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production/StepperDriver.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production/StepperDriver.X.production.o
@@ -207,13 +246,16 @@ __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/StepperDriver.X.p
 __Hintret 0 0 ABS 0 intret dist/default/production/StepperDriver.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production/StepperDriver.X.production.o
 __S0 30000E 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
-__S1 2 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
+__S1 B 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __S2 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
+_lut 801 0 SMALLCONST 0 smallconst dist/default/production/StepperDriver.X.production.o
 __CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __CFG_PLLDIV$1 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production/StepperDriver.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/StepperDriver.X.production.o
+__end_of_lut 821 0 SMALLCONST 0 smallconst dist/default/production/StepperDriver.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production/StepperDriver.X.production.o
+move@dir 5 0 COMRAM 1 cstackCOMRAM dist/default/production/StepperDriver.X.production.o
 __Hramtop 800 0 RAM 0 ramtop dist/default/production/StepperDriver.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production/StepperDriver.X.production.o
 __activetblptr 1 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
@@ -228,30 +270,33 @@ _LATBbits F8A 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production/StepperDriver.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production/StepperDriver.X.production.o
 __CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
-stackhi 7FF 0 ABS 0 - /tmp/xcX9cAFUW.o
-stacklo 60 0 ABS 0 - /tmp/xcX9cAFUW.o
+stackhi 7FF 0 ABS 0 - /tmp/xcXIANufL.o
+stacklo 60 0 ABS 0 - /tmp/xcXIANufL.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production/StepperDriver.X.production.o
-__end_ofmain@time 803 0 SMALLCONST 0 smallconst dist/default/production/StepperDriver.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production/StepperDriver.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production/StepperDriver.X.production.o
 __CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
+__pbssCOMRAM 9 0 COMRAM 1 bssCOMRAM dist/default/production/StepperDriver.X.production.o
 __CFG_LVP$ON 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/StepperDriver.X.production.o
 __CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
-end_of_initialization 86A 0 CODE 0 cinit dist/default/production/StepperDriver.X.production.o
+end_of_initialization 96C 0 CODE 0 cinit dist/default/production/StepperDriver.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/StepperDriver.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production/StepperDriver.X.production.o
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production/StepperDriver.X.production.o
 __Lramtop 800 0 RAM 0 ramtop dist/default/production/StepperDriver.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production/StepperDriver.X.production.o
-__pcinit 86A 0 CODE 0 cinit dist/default/production/StepperDriver.X.production.o
-__ptext0 804 0 CODE 0 text0 dist/default/production/StepperDriver.X.production.o
+__pcinit 968 0 CODE 0 cinit dist/default/production/StepperDriver.X.production.o
+__ptext0 8EA 0 CODE 0 text0 dist/default/production/StepperDriver.X.production.o
+__ptext1 824 0 CODE 0 text1 dist/default/production/StepperDriver.X.production.o
+__ptext2 918 0 CODE 0 text2 dist/default/production/StepperDriver.X.production.o
+__ptext3 940 0 CODE 0 text3 dist/default/production/StepperDriver.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production/StepperDriver.X.production.o
-__ramtop 800 0 RAM 0 ramtop /tmp/xcX9cAFUW.o
+__ramtop 800 0 RAM 0 ramtop /tmp/xcXIANufL.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production/StepperDriver.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/StepperDriver.X.production.o
 __psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production/StepperDriver.X.production.o
@@ -260,7 +305,7 @@ __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/StepperDriver.X.produc
 __CFG_FOSC$HS 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/StepperDriver.X.production.o
-__end_of__initialization 86A 0 CODE 0 cinit dist/default/production/StepperDriver.X.production.o
+__end_of__initialization 96C 0 CODE 0 cinit dist/default/production/StepperDriver.X.production.o
 __CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
@@ -271,7 +316,11 @@ __CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production/StepperDriver.X.production.o
 __CFG_PWRT$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/StepperDriver.X.production.o
-__end_of_main 86A 0 CODE 0 text0 dist/default/production/StepperDriver.X.production.o
+__end_of_main 918 0 CODE 0 text0 dist/default/production/StepperDriver.X.production.o
+__end_of_move 8EA 0 CODE 0 text1 dist/default/production/StepperDriver.X.production.o
+__end_of_time 823 0 SMALLCONST 0 smallconst dist/default/production/StepperDriver.X.production.o
+__end_of_coilA 968 0 CODE 0 text3 dist/default/production/StepperDriver.X.production.o
+__end_of_coilB 940 0 CODE 0 text2 dist/default/production/StepperDriver.X.production.o
 _TRISB F93 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __CFG_CP0$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __CFG_CP1$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
@@ -284,11 +333,14 @@ __Lbss 0 0 RAM 1 bss dist/default/production/StepperDriver.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production/StepperDriver.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production/StepperDriver.X.production.o
 __CFG_CP2$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
+_coilA 940 0 CODE 0 text3 dist/default/production/StepperDriver.X.production.o
+_coilB 918 0 CODE 0 text2 dist/default/production/StepperDriver.X.production.o
 __CFG_CPB$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production/StepperDriver.X.production.o
-__initialization 86A 0 CODE 0 cinit dist/default/production/StepperDriver.X.production.o
+_state 9 0 COMRAM 1 bssCOMRAM dist/default/production/StepperDriver.X.production.o
+__initialization 968 0 CODE 0 cinit dist/default/production/StepperDriver.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production/StepperDriver.X.production.o
-__Hsmallconst 804 0 SMALLCONST 0 smallconst dist/default/production/StepperDriver.X.production.o
+__Hsmallconst 824 0 SMALLCONST 0 smallconst dist/default/production/StepperDriver.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production/StepperDriver.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/StepperDriver.X.production.o
 __Hintcode 0 0 CODE 0 intcode dist/default/production/StepperDriver.X.production.o
@@ -317,8 +369,8 @@ __Hintcode 0 0 CODE 0 intcode dist/default/production/StepperDriver.X.production
 # All other numeric quantities are in decimal.
 %SEGMENTS
 idloc 0 200000 200000 8 1
-text0 0 804 804 74 1
-cstackCOMRAM 1 1 1 1 1
+text1 0 824 824 156 1
+cstackCOMRAM 1 1 1 A 1
 reset_vec 0 0 0 4 1
-smallconst 0 800 800 4 1
+smallconst 0 800 800 24 1
 config 0 300000 300000 E 1
